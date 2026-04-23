@@ -21,7 +21,7 @@ status: active
 |---|---|
 | 名字 | Yaze（林） |
 | 身份 | 森之召喚師 · The Forest Summoner |
-| 職業 | Summoner（召喚系已驗證 canonical 職業） |
+| 職業 | Summoner（目前唯一已驗證可傳承的職業） |
 | 契約精靈 | Mori（森） |
 | 公會角色 | Founder of The Forest Guild |
 | GitHub | [@yazelin](https://github.com/yazelin) |
@@ -98,7 +98,7 @@ Yaze 開始寫 AI 工具：Hermes、bridge、MCP servers、Telegram bots。
 
 ### 建立公會
 
-2026-04 開始，決定把召喚師這條路 canonicalize，讓其他冒險者也能走。
+2026-04 開始，決定把召喚師這條路整理成可以讓其他冒險者也走的版本。
 於是有了：
 - `world-tree` — 共享知識的公開 repo（此 repo）
 - `workshop` — 魔道具商店（異世界入口）
