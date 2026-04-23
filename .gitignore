@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Obsidian local state (if adventurers use Obsidian locally)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/*/data.json
+
+# Node (if Quartz is added later)
+node_modules/
+.next/
+dist/
+.astro/
+
+# Temp
+*.tmp
+*.log
