@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 📄 卷軸化術 · Scribe's Hand
+# 卷軸化術 · Scribe's Hand
 
 > *將凡人墨跡（Markdown）煉成正式卷軸（Word）。*
 

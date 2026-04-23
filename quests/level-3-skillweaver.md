@@ -6,7 +6,7 @@ duration: 1 週
 deliverable: 3 個自訂 skills
 ---
 
-# Level 3 · 賦能者（Skillweaver）🌳
+# Level 3 · 賦能者（Skillweaver）
 
 > 通用 AI 只能給通用答案。有 skill 的精靈是你的專業夥伴。
 

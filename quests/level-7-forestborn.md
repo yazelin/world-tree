@@ -6,7 +6,7 @@ duration: 2 週
 deliverable: 你自己的 Annuli 部署、自主循環運作中
 ---
 
-# Level 7 · 森之大魔導師（Forestborn）🌲🌲🌲
+# Level 7 · 森之大魔導師（Forestborn）
 
 > 真正的夥伴不是被動等你問，是自己在生長。
 

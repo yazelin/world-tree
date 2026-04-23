@@ -7,7 +7,7 @@ duration: 起點（沒有時限）
 deliverable: 踏入森林的覺察
 ---
 
-# Level 0 · 旅人（Wanderer）🍃
+# Level 0 · 旅人（Wanderer）
 
 > 這是你現在的位置。你使用 AI，但 AI 不認得你。
 

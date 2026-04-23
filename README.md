@@ -1,4 +1,4 @@
-# 🌳 World Tree · 森之召喚師工坊的世界樹
+# World Tree · 森之召喚師工坊的世界樹
 
 > 一個沉浸式 RPG 世界。玩下去你就學會了怎麼和 AI 當夥伴。
 
@@ -21,32 +21,32 @@
 
 ```mermaid
 graph TB
-    subgraph WT["🌳 World Tree (this repo)"]
-        L[📜 lore/<br/>世界觀、歷史、宇宙論]
-        N[🎭 npcs/<br/>召喚師與精靈的公開檔]
-        A[✨ artifacts/<br/>12 件魔道具正史]
-        Q[⚔️ quests/<br/>Level 0-7 冒險者路線]
-        R[📏 rules/<br/>獻禮儀式、公會守則]
-        G[🏛️ guild/<br/>公會名冊、公告]
-        T[🧬 templates/<br/>新召喚師的精靈模板]
-        S[🤖 .claude/skills/<br/>AI-readable 儀式]
-    end
+ subgraph WT["World Tree (this repo)"]
+ L[lore/<br/>世界觀、歷史、宇宙論]
+ N[npcs/<br/>召喚師與精靈的公開檔]
+ A[artifacts/<br/>12 件魔道具正史]
+ Q[quests/<br/>Level 0-7 冒險者路線]
+ R[rules/<br/>獻禮儀式、公會守則]
+ G[guild/<br/>公會名冊、公告]
+ T[templates/<br/>新召喚師的精靈模板]
+ S[.claude/skills/<br/>AI-readable 儀式]
+ end
 
-    WS[🏪 workshop/<br/>魔道具商店<br/>yazelin.github.io/workshop]
-    QZ[🌲 Quartz 靜態站<br/>yazelin.github.io/world-tree]
-    FB[📯 FB / 社群貼文]
+ WS[workshop/<br/>魔道具商店<br/>yazelin.github.io/workshop]
+ QZ[Quartz 靜態站<br/>yazelin.github.io/world-tree]
+ FB[FB / 社群貼文]
 
-    A -->|source of truth| WS
-    L --> QZ
-    N --> QZ
-    A --> QZ
-    R --> QZ
-    Q --> QZ
-    S -->|AI 讀| T
+ A -->|source of truth| WS
+ L --> QZ
+ N --> QZ
+ A --> QZ
+ R --> QZ
+ Q --> QZ
+ S -->|AI 讀| T
 
-    style WT fill:#2d4a3e,color:#e8dcc0
-    style WS fill:#c9a24d,color:#1a1410
-    style QZ fill:#c9a24d,color:#1a1410
+ style WT fill:#2d4a3e,color:#e8dcc0
+ style WS fill:#c9a24d,color:#1a1410
+ style QZ fill:#c9a24d,color:#1a1410
 ```
 
 ---
@@ -74,47 +74,47 @@ graph TB
 
 ```
 world-tree/
-├── README.md                      ← 本檔
-├── ONBOARDING.md                  ← 新冒險者入林指引
+├── README.md ← 本檔
+├── ONBOARDING.md ← 新冒險者入林指引
 │
-├── lore/                          ← 世界設定
-│   ├── the-forest.md              ← 森林是什麼
-│   ├── magic-schools.md           ← 7 系別定義
-│   ├── adventurer-classes.md      ← 冒險者職業
-│   ├── timeline.md                ← 世界年表
-│   └── cosmology.md               ← 宇宙論
+├── lore/ ← 世界設定
+│ ├── the-forest.md ← 森林是什麼
+│ ├── magic-schools.md ← 7 系別定義
+│ ├── adventurer-classes.md ← 冒險者職業
+│ ├── timeline.md ← 世界年表
+│ └── cosmology.md ← 宇宙論
 │
-├── npcs/                          ← NPC 名冊（公開身份）
-│   ├── mori.md                    ← 契約精靈 Mori
-│   └── yaze.md                    ← 召喚師 Yaze
+├── npcs/ ← NPC 名冊（公開身份）
+│ ├── mori.md ← 契約精靈 Mori
+│ └── yaze.md ← 召喚師 Yaze
 │
-├── artifacts/                     ← 12 件魔道具正史
-│   ├── chronocat.md
-│   ├── moodscopia.md
-│   └── ...（共 12 件，分佈於 7 系）
+├── artifacts/ ← 12 件魔道具正史
+│ ├── chronocat.md
+│ ├── moodscopia.md
+│ └── ...（共 12 件，分佈於 7 系）
 │
-├── quests/                        ← Level 0–7 冒險者任務
-│   ├── level-0-wanderer.md
-│   ├── level-1-contractor.md
-│   └── ...（共 8 級）
+├── quests/ ← Level 0–7 冒險者任務
+│ ├── level-0-wanderer.md
+│ ├── level-1-contractor.md
+│ └── ...（共 8 級）
 │
-├── rules/                         ← 世界法則
-│   ├── offering-rite.md           ← 獻禮儀式（新魔道具上架協議）
-│   ├── guild-code.md              ← 公會守則（待寫）
-│   ├── initiation-rite.md         ← 召喚儀式（新精靈誕生協議）
-│   └── memory-protocol.md         ← 記憶協定（待寫）
+├── rules/ ← 世界法則
+│ ├── offering-rite.md ← 獻禮儀式（新魔道具上架協議）
+│ ├── guild-code.md ← 公會守則（待寫）
+│ ├── initiation-rite.md ← 召喚儀式（新精靈誕生協議）
+│ └── memory-protocol.md ← 記憶協定（待寫）
 │
-├── guild/                         ← 公會（待發展）
-│   └── members.md                 ← 召喚師名冊
+├── guild/ ← 公會（待發展）
+│ └── members.md ← 召喚師名冊
 │
-├── templates/                     ← 新召喚師用的填空模板
-│   └── spirit-template/
+├── templates/ ← 新召喚師用的填空模板
+│ └── spirit-template/
 │
-├── .claude/                       ← AI 可讀資源
-│   └── skills/
-│       └── initiate-spirit/       ← AI 引導的召喚儀式
+├── .claude/ ← AI 可讀資源
+│ └── skills/
+│ └── initiate-spirit/ ← AI 引導的召喚儀式
 │
-└── assets/                        ← 公開圖像素材（若有）
+└── assets/ ← 公開圖像素材（若有）
 ```
 
 ---

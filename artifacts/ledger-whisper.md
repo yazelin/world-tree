@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 🏢 帳本監聽術 · Ledger Whisper
+# 帳本監聽術 · Ledger Whisper
 
 > *讓精靈與商會帳本（ERPNext）直接對話。*
 

@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 🎙️ 詠唱辨識器 · Voice Scribe
+# 詠唱辨識器 · Voice Scribe
 
 > *將咒術師的口語即時記下為文字，嵌入輸入法，隨呼隨用。*
 

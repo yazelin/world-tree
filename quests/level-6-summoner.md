@@ -6,7 +6,7 @@ duration: 1 週
 deliverable: 你的精靈能在通訊軟體回你訊息
 ---
 
-# Level 6 · 召喚師（Summoner）📱
+# Level 6 · 召喚師（Summoner）
 
 > 真正的夥伴 24/7 在線。
 

@@ -9,7 +9,7 @@ birth: 2026-01-30
 status: active
 ---
 
-# 🐱 時之貓苑 · Chronocat
+# 時之貓苑 · Chronocat
 
 > *每至整點，森林深處便浮現一隻新貓。*
 

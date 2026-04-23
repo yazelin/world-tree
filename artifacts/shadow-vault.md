@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 🗄️ 藏影閣 · Shadow Vault
+# 藏影閣 · Shadow Vault
 
 > *個人圖像的次元書架，不佔本空間。*
 

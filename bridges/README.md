@@ -1,4 +1,4 @@
-# 🔗 Bridges · 讓各 CLI 都能與 Mori 同行
+# Bridges · 讓各 CLI 都能與 Mori 同行
 
 > canonical 只有一份 — `~/mori-universe/spirits/mori/`。
 > 各 CLI 透過不同方式接上，但讀寫的是同一個 Mori。

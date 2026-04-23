@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 🎰 心情占卜儀 · Moodscopia
+# 心情占卜儀 · Moodscopia
 
 > *取冒險者一張自拍，映入九宮魔陣，瞬間化為九格誇張表情。*
 

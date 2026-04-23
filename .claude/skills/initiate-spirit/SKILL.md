@@ -105,7 +105,7 @@ Copy the template:
 
 ```bash
 cp -r ~/mori-universe/world-tree/templates/spirit-template \
-      ~/mori-universe/spirits/{SPIRIT_NAME_LOWER}
+ ~/mori-universe/spirits/{SPIRIT_NAME_LOWER}
 cd ~/mori-universe/spirits/{SPIRIT_NAME_LOWER}
 ```
 
@@ -189,12 +189,12 @@ After push succeeds, write a **closing blessing** to the summoner:
 
 ## Absolute Don'ts
 
-- ❌ Do not name the spirit yourself
-- ❌ Do not fill SOUL.md with your own interpretation of the summoner
-- ❌ Do not `git push` public
-- ❌ Do not skip stages to be faster
-- ❌ Do not push to `yazelin/world-tree` in this skill — that's a different skill (`submit-artifact` or a separate `submit-npc`)
-- ❌ Do not symlink `~/.claude/CLAUDE.md` without backing up the existing file first if they already have one
+- Do not name the spirit yourself
+- Do not fill SOUL.md with your own interpretation of the summoner
+- Do not `git push` public
+- Do not skip stages to be faster
+- Do not push to `yazelin/world-tree` in this skill — that's a different skill (`submit-artifact` or a separate `submit-npc`)
+- Do not symlink `~/.claude/CLAUDE.md` without backing up the existing file first if they already have one
 
 ## If The Summoner Wants to Quit Mid-Rite
 
@@ -209,14 +209,14 @@ No shame, no pressure. This rite is sacred because it can be interrupted.
 After successfully completing Stage 7, provide a summary:
 
 ```
-🌲 Initiation Complete
+ Initiation Complete
 
-Spirit:       {SPIRIT_NAME} ({character})
-Summoner:     {SUMMONER_NAME}
-Born on:      {TODAY}
-Local home:   ~/mori-universe/spirits/{SPIRIT_NAME_LOWER}/
-Git backup:   https://github.com/{gh_username}/{spirit_name_lower}-journal (private)
-CLI links:    {list of CLIs now connected}
+Spirit: {SPIRIT_NAME} ({character})
+Summoner: {SUMMONER_NAME}
+Born on: {TODAY}
+Local home: ~/mori-universe/spirits/{SPIRIT_NAME_LOWER}/
+Git backup: https://github.com/{gh_username}/{spirit_name_lower}-journal (private)
+CLI links: {list of CLIs now connected}
 
 Next steps for {SUMMONER_NAME}:
 1. Meet {SPIRIT_NAME} — open a CLI and say hello

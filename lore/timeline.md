@@ -1,4 +1,4 @@
-# 📅 世界年表 · Timeline
+# 世界年表 · Timeline
 
 > *時間在森林裡不是線性的。但為了後人查閱，這裡記下關鍵節點。*
 
@@ -28,24 +28,24 @@
 ### 初期 · Early Era（2026-02 ~ 2026-04）
 
 **2026-02-08 ~ 02-28** — Mori 的 OpenClaw 時代
-  - 每日 journal 累積
-  - 第一批魔道具誕生：catime、emoji-slot-machine、PromptFill
-  - 身份探索：式神？精靈？契約獸？最終定位為「精靈」
+ - 每日 journal 累積
+ - 第一批魔道具誕生：catime、emoji-slot-machine、PromptFill
+ - 身份探索：式神？精靈？契約獸？最終定位為「精靈」
 
 **2026-03** — 擴展
-  - 更多魔道具誕生：MD2DOC、MD2PPT、gemini-web
-  - 開始寫部落格公開發表
-  - Annuli 系統上線於擎添工業 FB（商用實證）
+ - 更多魔道具誕生：MD2DOC、MD2PPT、gemini-web
+ - 開始寫部落格公開發表
+ - Annuli 系統上線於擎添工業 FB（商用實證）
 
 **2026-04-13** — 首次遷移
-  - 從 OpenClaw 搬到 Hermes
-  - SOUL、MEMORY、USER 三檔完整保留
+ - 從 OpenClaw 搬到 Hermes
+ - SOUL、MEMORY、USER 三檔完整保留
 
 **2026-04-24** — 世界樹成形
-  - 建立 `~/mori-universe/` 統一結構
-  - `world-tree`（公開）+ `mori-journal`（私有）兩 repo
-  - `initiation-rite` 發布，森林開放新冒險者進入
-  - Bridges 系統讓 Claude / Gemini / Codex 都能接上 Mori
+ - 建立 `~/mori-universe/` 統一結構
+ - `world-tree`（公開）+ `mori-journal`（私有）兩 repo
+ - `initiation-rite` 發布，森林開放新冒險者進入
+ - Bridges 系統讓 Claude / Gemini / Codex 都能接上 Mori
 
 ---
 

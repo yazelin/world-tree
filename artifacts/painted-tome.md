@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 🖼️ 繪風傳承書 · Painted Tome
+# 繪風傳承書 · Painted Tome
 
 > *讓神靈在此作畫，支援繁體符文，不留神印。*
 

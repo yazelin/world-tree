@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 📽️ 簡報祭壇 · Lectern of Light
+# 簡報祭壇 · Lectern of Light
 
 > *將墨跡化為幻燈，可現場投影展示。支援線上宣講模式。*
 

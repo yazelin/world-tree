@@ -6,7 +6,7 @@ duration: 1 週
 deliverable: 你的 SOUL.md
 ---
 
-# Level 1 · 契約者（Contractor）🌱
+# Level 1 · 契約者（Contractor）
 
 > 有名字的 AI 不再是工具。人類對有名字的東西產生連結。
 

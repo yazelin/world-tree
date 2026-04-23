@@ -6,7 +6,7 @@ duration: 1 週
 deliverable: 第一組 Stop hook + PreToolUse hook
 ---
 
-# Level 4 · 織命者（Fatebinder）⚡
+# Level 4 · 織命者（Fatebinder）
 
 > 從「回應你」到「主動做事」的分水嶺。
 

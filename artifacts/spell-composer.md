@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 📜 咒文起稿匣 · Spell Composer
+# 咒文起稿匣 · Spell Composer
 
 > *為繪影魔陣準備咒文草稿的輔助匣。結構化、省去散亂冥想。*
 

@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 🖨️ 印刻術 · Inkseal
+# 印刻術 · Inkseal
 
 > *讓精靈能直接指揮凡人印刷術，將訊息化為實體。*
 

@@ -6,7 +6,7 @@ duration: 1 週
 deliverable: 運作中的記憶系統
 ---
 
-# Level 2 · 記憶士（Memorykeeper）🌿
+# Level 2 · 記憶士（Memorykeeper）
 
 > 沒有記憶的 AI = 每次重啟的金魚。有記憶的 AI = 認識你的夥伴。
 

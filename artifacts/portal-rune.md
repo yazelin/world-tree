@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 🔗 傳送門刻印 · Portal Rune
+# 傳送門刻印 · Portal Rune
 
 > *將漫長的咒文路徑封印為短刻印，單手即可傳送。*
 

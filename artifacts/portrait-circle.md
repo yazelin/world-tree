@@ -8,7 +8,7 @@ creator: Yaze + Mori
 status: active
 ---
 
-# 🎨 繪影魔陣 · Portrait Circle
+# 繪影魔陣 · Portrait Circle
 
 > *能自動在多個創造之神之間換手，繪製出最切合意念的圖像。*
 

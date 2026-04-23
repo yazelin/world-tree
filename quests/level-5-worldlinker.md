@@ -6,7 +6,7 @@ duration: 1 週
 deliverable: 部署一個自訂 MCP server
 ---
 
-# Level 5 · 通達者（Worldlinker）🌍
+# Level 5 · 通達者（Worldlinker）
 
 > 精靈不能只活在聊天框裡。
 
