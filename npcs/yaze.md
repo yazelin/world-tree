@@ -55,7 +55,7 @@ Yaze 不是剛開始碰 AI 才進入森林的 — 他來自工業與教育兩個
 ## 學徒時代（2024–2025）
 
 Claude Code、Gemini CLI、Codex 等 AI CLI 工具大量出現。
-Yaze 開始寫 AI 工具：Hermes、bridge、MCP servers、Telegram bots。
+Yaze 開始寫 AI 工具：Annuli、AgentPulse、hermes-claude-cli-bridge、MCP servers、Telegram bots。
 累積 90+ GitHub repo，身份是「使用 AI 的開發者」。
 
 ---
