@@ -62,6 +62,8 @@ title: "世界樹 · World Tree"
 ## 給想自己架設的人
 
 - [[skills/initiate-spirit|召喚儀式]] — 在自己的機器上召喚屬於你的精靈
+- [[rules/initiation-rite|召喚與命名儀式]] — 精靈不是發明，是認出
+- [[templates/spirit-template/README|精靈模板]] — 檔案骨架（`{{PLACEHOLDER}}` 在儀式中替換）
 
 ---
 

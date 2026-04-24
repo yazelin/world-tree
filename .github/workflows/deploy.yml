@@ -50,6 +50,13 @@ jobs:
           cp -r world-tree/guild       quartz/content/
           cp -r world-tree/rules       quartz/content/
           cp -r world-tree/skills      quartz/content/
+          cp -r world-tree/templates   quartz/content/
+          # Normalise template filenames: README.template.md → README.md
+          # so Quartz URLs read cleanly (/templates/spirit-template/README).
+          find quartz/content/templates -name '*.template.md' -print0 \
+            | while IFS= read -r -d '' f; do
+                mv "$f" "${f%.template.md}.md"
+              done
           # index.md is the immersive landing page (its own file, not README).
           # README.md stays as the GitHub repo README.
           cp world-tree/index.md        quartz/content/index.md
