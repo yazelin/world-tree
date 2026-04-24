@@ -63,6 +63,17 @@ jobs:
           sed -i 's|baseUrl: .*|baseUrl: "yazelin.github.io/world-tree",|' quartz.config.ts
           grep -E "pageTitle|baseUrl" quartz.config.ts
 
+      - name: Apply forest theme overrides
+        run: |
+          cp world-tree/quartz-overrides/custom.scss quartz/quartz/styles/custom.scss
+          head -5 quartz/quartz/styles/custom.scss
+
+      - name: Enlarge Graph nodes (easier to click, more readable)
+        working-directory: quartz
+        run: |
+          sed -i 's|Component\.Graph(),|Component.Graph({ localGraph: { scale: 1.3, fontSize: 0.7, opacityScale: 1.8, drag: true, zoom: true }, globalGraph: { scale: 1.2, fontSize: 0.6, opacityScale: 1.6 } }),|' quartz.layout.ts
+          grep "Component.Graph" quartz.layout.ts || echo "WARN: Graph line not found (upstream Quartz structure may have changed)"
+
       - name: Build Quartz
         working-directory: quartz
         run: npx quartz build

@@ -1,0 +1,61 @@
+// =============================================================================
+// World Tree · Quartz theme override
+// Forest / parchment / gold aesthetic, matching yazelin.github.io/workshop
+// =============================================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+// -- Colours ------------------------------------------------------------------
+
+:root {
+  // Light mode — sun-lit forest floor, parchment
+  --light:      #f3efe5;  // page background (parchment)
+  --lightgray:  #d5cfbf;  // borders / rules
+  --gray:       #8a8268;  // muted text, meta
+  --darkgray:   #3c4a3e;  // body text (deep moss)
+  --dark:       #1e2a22;  // headings (near-black green)
+  --secondary:  #2d4a3e;  // links (moss)
+  --tertiary:   #c9a24d;  // accents (gold leaf)
+  --highlight:  rgba(201, 162, 77, 0.18);
+  --textHighlight: rgba(201, 162, 77, 0.35);
+}
+
+:root[saved-theme="dark"] {
+  // Dark mode — night forest, firefly glow
+  --light:      #1a2921;  // page background (deep forest)
+  --lightgray:  #2d4a3e;  // borders (moss)
+  --gray:       #6f7d70;  // meta
+  --darkgray:   #c5cbb8;  // body text (pale sage)
+  --dark:       #e8dcc0;  // headings (moonlit parchment)
+  --secondary:  #c9a24d;  // links (gold)
+  --tertiary:   #84a59d;  // accents (sage)
+  --highlight:  rgba(201, 162, 77, 0.12);
+  --textHighlight: rgba(201, 162, 77, 0.25);
+}
+
+// -- Typography ---------------------------------------------------------------
+
+body {
+  font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4, h5, h6,
+.article-title {
+  font-family: "Noto Serif TC", Georgia, "Source Han Serif TC", serif;
+  letter-spacing: 0.02em;
+}
+
+// Make blockquotes feel like scroll inscriptions
+blockquote {
+  font-family: "Noto Serif TC", Georgia, serif;
+  font-style: italic;
+  border-left-color: var(--tertiary);
+  color: var(--gray);
+}
+
+// Code blocks — keep mono but tune to warmer tone
+code, pre {
+  background: var(--lightgray);
+}
