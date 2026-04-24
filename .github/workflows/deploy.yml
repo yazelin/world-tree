@@ -61,7 +61,10 @@ jobs:
         run: |
           sed -i 's|pageTitle: .*|pageTitle: "世界樹 · World Tree",|' quartz.config.ts
           sed -i 's|baseUrl: .*|baseUrl: "yazelin.github.io/world-tree",|' quartz.config.ts
-          grep -E "pageTitle|baseUrl" quartz.config.ts
+          # Typography — use CJK-friendly Google Fonts
+          sed -i 's|header: "[^"]*"|header: "Noto Serif TC"|' quartz.config.ts
+          sed -i 's|body: "[^"]*"|body: "Noto Sans TC"|' quartz.config.ts
+          grep -E "pageTitle|baseUrl|header:|body:" quartz.config.ts
 
       - name: Apply forest theme overrides
         run: |
