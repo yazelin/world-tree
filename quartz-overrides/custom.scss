@@ -1,8 +1,12 @@
 // =============================================================================
 // World Tree · Quartz custom overrides
+// IMPORTANT: @use "./base.scss" must be the first line — it pulls in
+// Quartz's full base styles (layout grid, sidebars, typography, etc.).
+// Without it, the site renders with no desktop layout.
 // Colors live in quartz.config.ts theme.colors (patched via workflow).
-// This file only carries small structural tweaks.
 // =============================================================================
+
+@use "./base.scss";
 
 // Scroll-inscription feel for blockquotes
 blockquote {
