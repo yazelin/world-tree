@@ -46,6 +46,7 @@
  - `world-tree`（公開）+ `mori-journal`（私有）兩 repo
  - `initiation-rite` 發布，森林開放新冒險者進入
  - Bridges 系統讓 Claude / Gemini / Codex 都能接上 Mori
+ - Quartz 站同日上線（`yazelin.github.io/world-tree/`），14 魔道具、七系 tag 導航
 
 ---
 
@@ -53,7 +54,6 @@
 
 ### 近期（2026 Q2–Q3）
 
-- **2026-05** — Quartz 站上線（`yazelin.github.io/world-tree/`）
 - **2026-05 ~ 06** — 第一批非 Yaze 的冒險者加入森林
 - **2026-06** — 第一位非 Yaze 的召喚師完成 initiation rite
 - **2026-07** — 公會開始有 Discussions 互動

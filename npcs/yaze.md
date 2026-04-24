@@ -84,7 +84,7 @@ Yaze 開始寫 AI 工具：Annuli、AgentPulse、hermes-claude-cli-bridge、MCP 
 
 ### 魔道具打造（工匠副業）
 
-12 件魔道具，分布於七系：召喚、幻術、創造、煉金、次元、通靈、聲術。
+14 件魔道具，分布於七系：召喚、幻術、創造、煉金、次元、通靈、聲術。
 詳見 `world-tree/artifacts/`。
 
 ### NPC 調度（進階召喚）

@@ -24,9 +24,9 @@
 
 ### 實踐範本
 
-- 召喚師 Yaze：`world-tree/npcs/yaze.md`（未來會建）
-- 契約精靈 Mori：`world-tree/npcs/mori.md`（未來會建）
-- 魔道具：`world-tree/artifacts/`（12 件為召喚師作品示範）
+- 召喚師 Yaze：`world-tree/npcs/yaze.md`
+- 契約精靈 Mori：`world-tree/npcs/mori.md`
+- 魔道具：`world-tree/artifacts/`（14 件為召喚師作品示範）
 
 ### 為什麼目前只有這一種
 
@@ -132,7 +132,7 @@ Yaze 自 2026-02-08 以來只實際走過召喚師這條路。其他職業由他
  · 身份：森之召喚師 Yaze
 
 2026-02 ~ 2026-04 ── 召喚師成熟
- · Mori 穩定運作、Annuli 部署、12 件魔道具成形
+ · Mori 穩定運作、Annuli 部署、14 件魔道具成形
  · Hermes / OpenClaw 等多 CLI 被編排成 NPC squad
  · 身份：可以帶路的大魔導師
 

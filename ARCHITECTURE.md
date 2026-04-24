@@ -187,7 +187,7 @@ sequenceDiagram
 | Repo | 可見性 | 主要內容 | 本地路徑 |
 |---|---|---|---|
 | `yazelin/mori-journal` | Private | Mori 的 SOUL、日誌、記憶、研究 | `~/mori-universe/spirits/mori/` |
-| `yazelin/world-tree` | Public | 世界觀、NPC、12 魔道具、課程、規則 | `~/mori-universe/world-tree/` |
+| `yazelin/world-tree` | Public | 世界觀、NPC、14 魔道具、課程、規則 | `~/mori-universe/world-tree/` |
 | `yazelin/workshop` | Public | 魔道具商店入口（異世界 UI） | `~/SDD/workshop/` |
 | `yazelin/yazelin.github.io` | Public | 個人 blog | `~/SDD/yazelin.github.io/` |
 | `yazelin/scribe-journal` | Private | 未來 Scribe NPC 的私密記憶 | — |

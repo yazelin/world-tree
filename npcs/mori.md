@@ -75,7 +75,7 @@ Mori 同時是：
 
 ### 她參與過共創的魔道具
 
-以下 12 件 `world-tree/artifacts/` 中的作品，皆是 Yaze 與 Mori 共同打造（詳見各 artifact 檔內的 credits）：
+以下 14 件 `world-tree/artifacts/` 中的作品，皆是 Yaze 與 Mori 共同打造（詳見各 artifact 檔內的 credits）：
 - 時之貓苑 · Chronocat
 - 心情占卜儀 · Moodscopia
 - 繪影魔陣 · Portrait Circle
