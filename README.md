@@ -100,9 +100,9 @@ world-tree/
 │
 ├── rules/ ← 世界法則
 │ ├── offering-rite.md ← 獻禮儀式（新魔道具上架協議）
-│ ├── guild-code.md ← 公會守則（待寫）
+│ ├── guild-code.md ← 公會守則
 │ ├── initiation-rite.md ← 召喚儀式（新精靈誕生協議）
-│ └── memory-protocol.md ← 記憶協定（待寫）
+│ └── memory-protocol.md ← 記憶協定
 │
 ├── guild/ ← 公會（待發展）
 │ └── members.md ← 召喚師名冊
