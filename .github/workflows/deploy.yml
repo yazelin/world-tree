@@ -74,6 +74,28 @@ jobs:
           # Quartz default ignorePatterns excludes "templates"; allow it through
           sed -i 's|, *"templates"||' quartz.config.ts
           sed -i 's|"templates", *||' quartz.config.ts
+          # Forest palette (replacing each default hex; all tokens are
+          # distinct between light/dark modes except tertiary/highlight
+          # which we intentionally share across modes).
+          # Light mode
+          sed -i 's|"#faf8f8"|"#f3efe5"|g' quartz.config.ts
+          sed -i 's|"#e5e5e5"|"#d5cfbf"|g' quartz.config.ts
+          sed -i 's|"#b8b8b8"|"#8a8268"|g' quartz.config.ts
+          sed -i 's|"#4e4e4e"|"#3c4a3e"|g' quartz.config.ts
+          sed -i 's|"#2b2b2b"|"#1e2a22"|g' quartz.config.ts
+          sed -i 's|"#284b63"|"#2d4a3e"|g' quartz.config.ts
+          sed -i 's|"#fff23688"|"#c9a24d59"|g' quartz.config.ts
+          # Dark mode
+          sed -i 's|"#161618"|"#1a2921"|g' quartz.config.ts
+          sed -i 's|"#393639"|"#2d4a3e"|g' quartz.config.ts
+          sed -i 's|"#646464"|"#6f7d70"|g' quartz.config.ts
+          sed -i 's|"#d4d4d4"|"#c5cbb8"|g' quartz.config.ts
+          sed -i 's|"#ebebec"|"#e8dcc0"|g' quartz.config.ts
+          sed -i 's|"#7b97aa"|"#c9a24d"|g' quartz.config.ts
+          sed -i 's|"#b3aa0288"|"#c9a24d40"|g' quartz.config.ts
+          # Shared (both modes → gold accent / gold highlight)
+          sed -i 's|"#84a59d"|"#c9a24d"|g' quartz.config.ts
+          sed -i 's|"rgba(143, 159, 169, 0.15)"|"rgba(201, 162, 77, 0.18)"|g' quartz.config.ts
           grep -E "pageTitle|baseUrl|header:|body:|ignorePatterns" quartz.config.ts
 
       - name: Apply forest theme overrides

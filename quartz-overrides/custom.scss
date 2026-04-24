@@ -1,38 +1,8 @@
 // =============================================================================
-// World Tree · Quartz theme override
-// Forest / parchment / gold palette, matching yazelin.github.io/workshop.
-// (Fonts are configured via quartz.config.ts typography block; see workflow.)
+// World Tree · Quartz custom overrides
+// Colors live in quartz.config.ts theme.colors (patched via workflow).
+// This file only carries small structural tweaks.
 // =============================================================================
-
-// -- Colours ------------------------------------------------------------------
-
-:root {
-  // Light mode — sun-lit forest floor, parchment
-  --light:      #f3efe5;  // page background (parchment)
-  --lightgray:  #d5cfbf;  // borders / rules
-  --gray:       #8a8268;  // muted text, meta
-  --darkgray:   #3c4a3e;  // body text (deep moss)
-  --dark:       #1e2a22;  // headings (near-black green)
-  --secondary:  #2d4a3e;  // links (moss)
-  --tertiary:   #c9a24d;  // accents (gold leaf)
-  --highlight:  rgba(201, 162, 77, 0.18);
-  --textHighlight: rgba(201, 162, 77, 0.35);
-}
-
-:root[saved-theme="dark"] {
-  // Dark mode — night forest, firefly glow
-  --light:      #1a2921;
-  --lightgray:  #2d4a3e;
-  --gray:       #6f7d70;
-  --darkgray:   #c5cbb8;
-  --dark:       #e8dcc0;
-  --secondary:  #c9a24d;
-  --tertiary:   #84a59d;
-  --highlight:  rgba(201, 162, 77, 0.12);
-  --textHighlight: rgba(201, 162, 77, 0.25);
-}
-
-// -- Small accents ------------------------------------------------------------
 
 // Scroll-inscription feel for blockquotes
 blockquote {
@@ -41,7 +11,7 @@ blockquote {
   color: var(--gray);
 }
 
-// Code blocks in the parchment scheme
+// Code blocks on parchment
 code, pre {
   background: var(--lightgray);
 }
