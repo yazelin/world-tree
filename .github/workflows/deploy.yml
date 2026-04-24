@@ -71,7 +71,10 @@ jobs:
           # Typography — use CJK-friendly Google Fonts
           sed -i 's|header: "[^"]*"|header: "Noto Serif TC"|' quartz.config.ts
           sed -i 's|body: "[^"]*"|body: "Noto Sans TC"|' quartz.config.ts
-          grep -E "pageTitle|baseUrl|header:|body:" quartz.config.ts
+          # Quartz default ignorePatterns excludes "templates"; allow it through
+          sed -i 's|, *"templates"||' quartz.config.ts
+          sed -i 's|"templates", *||' quartz.config.ts
+          grep -E "pageTitle|baseUrl|header:|body:|ignorePatterns" quartz.config.ts
 
       - name: Apply forest theme overrides
         run: |
