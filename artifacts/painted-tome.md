@@ -1,5 +1,6 @@
 ---
 id: painted-tome
+title: "繪風傳承書 · Painted Tome"
 name_zh: 繪風傳承書
 name_en: Painted Tome
 school: 創造系 / Creation

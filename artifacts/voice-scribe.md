@@ -1,5 +1,6 @@
 ---
 id: voice-scribe
+title: "詠唱辨識器 · Voice Scribe"
 name_zh: 詠唱辨識器
 name_en: Voice Scribe
 school: 聲術系 / Incantation

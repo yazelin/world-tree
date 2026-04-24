@@ -1,5 +1,6 @@
 ---
 id: lectern-of-light
+title: "簡報祭壇 · Lectern of Light"
 name_zh: 簡報祭壇
 name_en: Lectern of Light
 school: 煉金系 / Transmutation

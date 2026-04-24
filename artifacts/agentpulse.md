@@ -1,5 +1,6 @@
 ---
 id: agentpulse
+title: "冥想第三眼 · AgentPulse"
 name_zh: 冥想第三眼
 name_en: AgentPulse
 school: 通靈系 / Binding

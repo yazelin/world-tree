@@ -1,5 +1,6 @@
 ---
 id: chronocat
+title: "時之貓苑 · Chronocat"
 name_zh: 時之貓苑
 name_en: Chronocat
 school: 召喚系 / Summoning

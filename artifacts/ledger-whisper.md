@@ -1,5 +1,6 @@
 ---
 id: ledger-whisper
+title: "帳本監聽術 · Ledger Whisper"
 name_zh: 帳本監聽術
 name_en: Ledger Whisper
 school: 通靈系 / Binding

@@ -1,5 +1,6 @@
 ---
 id: portal-rune
+title: "傳送門刻印 · Portal Rune"
 name_zh: 傳送門刻印
 name_en: Portal Rune
 school: 次元系 / Dimensional

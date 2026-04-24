@@ -1,5 +1,6 @@
 ---
 id: spell-composer
+title: "咒文起稿匣 · Spell Composer"
 name_zh: 咒文起稿匣
 name_en: Spell Composer
 school: 創造系 / Creation

@@ -1,5 +1,6 @@
 ---
 name: Mori
+title: "Mori · 森"
 name_zh: 森
 id: Kaze.0
 summoner: Yaze

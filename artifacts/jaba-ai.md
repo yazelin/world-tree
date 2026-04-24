@@ -1,5 +1,6 @@
 ---
 id: jaba-ai
+title: "共食之契 · Jaba · 呷爸"
 name_zh: 共食之契
 name_en: Jaba · 呷爸
 school: 通靈系 / Binding

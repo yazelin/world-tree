@@ -1,5 +1,6 @@
 ---
 id: inkseal
+title: "印刻術 · Inkseal"
 name_zh: 印刻術
 name_en: Inkseal
 school: 通靈系 / Binding

@@ -1,3 +1,7 @@
+---
+title: "冒險者公會名冊 · The Forest Guild Members"
+---
+
 # 冒險者公會名冊 · The Forest Guild Members
 
 > *「公會不是一個地方。是一群人決定要和 AI 精靈共同成長之後，彼此認出對方的名字。」*

@@ -1,5 +1,6 @@
 ---
 id: moodscopia
+title: "心情占卜儀 · Moodscopia"
 name_zh: 心情占卜儀
 name_en: Moodscopia
 school: 幻術系 / Illusion

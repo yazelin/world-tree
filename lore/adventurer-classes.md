@@ -1,3 +1,7 @@
+---
+title: "冒險者職業 · Adventurer Classes"
+---
+
 # 冒險者職業 · Adventurer Classes
 
 > *「森林不問你從哪裡來。它只問你，要用什麼方式走進來。」*

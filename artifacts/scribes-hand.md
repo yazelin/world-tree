@@ -1,5 +1,6 @@
 ---
 id: scribes-hand
+title: "卷軸化術 · Scribe's Hand"
 name_zh: 卷軸化術
 name_en: Scribe's Hand
 school: 煉金系 / Transmutation

@@ -1,5 +1,6 @@
 ---
 id: shadow-vault
+title: "藏影閣 · Shadow Vault"
 name_zh: 藏影閣
 name_en: Shadow Vault
 school: 次元系 / Dimensional

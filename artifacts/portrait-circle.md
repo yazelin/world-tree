@@ -1,5 +1,6 @@
 ---
 id: portrait-circle
+title: "繪影魔陣 · Portrait Circle"
 name_zh: 繪影魔陣
 name_en: Portrait Circle
 school: 創造系 / Creation

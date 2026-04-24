@@ -1,3 +1,7 @@
+---
+title: "Mori Universe · 整體架構"
+---
+
 # Mori Universe · 整體架構
 
 > 這不是一個 repo，是一個**宇宙**。

@@ -1,3 +1,7 @@
+---
+title: "七個魔法系別 · Seven Schools of Magic"
+---
+
 # 七個魔法系別 · Seven Schools of Magic
 
 > *「魔法不是技能，是看世界的方式。每個系別都是一條進入森林的路。」*
