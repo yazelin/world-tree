@@ -1,0 +1,85 @@
+name: Deploy Quartz site to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout world-tree (content)
+        uses: actions/checkout@v4
+        with:
+          path: world-tree
+
+      - name: Checkout Quartz (v4)
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          ref: v4
+          path: quartz
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Quartz dependencies
+        working-directory: quartz
+        run: npm ci
+
+      - name: Replace sample content with world-tree
+        run: |
+          rm -rf quartz/content
+          mkdir -p quartz/content
+          cp -r world-tree/artifacts   quartz/content/
+          cp -r world-tree/npcs        quartz/content/
+          cp -r world-tree/lore        quartz/content/
+          cp -r world-tree/quests      quartz/content/
+          cp -r world-tree/guild       quartz/content/
+          cp -r world-tree/rules       quartz/content/
+          cp -r world-tree/skills      quartz/content/
+          cp world-tree/README.md       quartz/content/index.md
+          cp world-tree/ARCHITECTURE.md quartz/content/ARCHITECTURE.md
+          cp world-tree/ONBOARDING.md   quartz/content/ONBOARDING.md
+
+      - name: Patch Quartz config for yazelin.github.io/world-tree
+        working-directory: quartz
+        run: |
+          sed -i 's|pageTitle: .*|pageTitle: "世界樹 · World Tree",|' quartz.config.ts
+          sed -i 's|baseUrl: .*|baseUrl: "yazelin.github.io/world-tree",|' quartz.config.ts
+          grep -E "pageTitle|baseUrl" quartz.config.ts
+
+      - name: Build Quartz
+        working-directory: quartz
+        run: npx quartz build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
