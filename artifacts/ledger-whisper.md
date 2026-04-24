@@ -3,6 +3,7 @@ id: ledger-whisper
 name_zh: 帳本監聽術
 name_en: Ledger Whisper
 school: 通靈系 / Binding
+tags: ["binding"]
 repo: yazelin/erpnext-mcp
 creator: Yaze + Mori
 status: active

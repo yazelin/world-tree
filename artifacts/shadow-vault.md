@@ -3,6 +3,7 @@ id: shadow-vault
 name_zh: 藏影閣
 name_en: Shadow Vault
 school: 次元系 / Dimensional
+tags: ["dimensional"]
 repo: yazelin/image-bed
 creator: Yaze + Mori
 status: active

@@ -3,6 +3,7 @@ id: agentpulse
 name_zh: 冥想第三眼
 name_en: AgentPulse
 school: 通靈系 / Binding
+tags: ["binding"]
 repo: yazelin/AgentPulse
 creator: Yaze + Mori
 birth: 2026-04-16

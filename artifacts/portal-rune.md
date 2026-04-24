@@ -3,6 +3,7 @@ id: portal-rune
 name_zh: 傳送門刻印
 name_en: Portal Rune
 school: 次元系 / Dimensional
+tags: ["dimensional"]
 repo: yazelin/shorturl-worker
 creator: Yaze + Mori
 status: active

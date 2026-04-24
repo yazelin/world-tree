@@ -31,20 +31,38 @@ title: "世界樹 · World Tree"
 - [[npcs/yaze|Yaze · 亞澤]] — 召喚師本人
 - [[guild/members|公會名冊]]
 
-## 十四件魔道具
+## 十四件魔道具（按魔法系別）
 
 由召喚師與精靈共同鍛造的真實作品集，分散於七個魔法系別之間。
-每一件都有自己的典故、效能、領取方式。
+點系別名可看該系所有藏品；點藏品名可讀條目。
 
-在世界樹讀條目：
+**[召喚系 · Summoning](tags/summoning)**（1）
+[[artifacts/chronocat|時之貓苑 Chronocat]]
 
-**召喚系** [[artifacts/chronocat|時之貓苑]]
-**幻術系** [[artifacts/moodscopia|心象萬花鏡]] · [[artifacts/portrait-circle|肖像圓陣]] · [[artifacts/painted-tome|畫冊典籍]]
-**創造系** [[artifacts/spell-composer|咒術組譜]] · [[artifacts/scribes-hand|抄寫師之手]] · [[artifacts/lectern-of-light|光之講壇]]
-**煉金系** [[artifacts/shadow-vault|影子金庫]]
-**次元系** [[artifacts/portal-rune|次元符文]]
-**通靈系** [[artifacts/inkseal|墨印]] · [[artifacts/ledger-whisper|帳簿低語]] · [[artifacts/jaba-ai|共食之契]] · [[artifacts/agentpulse|冥想第三眼]]
-**聲術系** [[artifacts/voice-scribe|詠唱辨識器]]
+**[幻術系 · Illusion](tags/illusion)**（1）
+[[artifacts/moodscopia|心情占卜儀 Moodscopia]]
+
+**[創造系 · Creation](tags/creation)**（3）
+[[artifacts/painted-tome|繪風傳承書 Painted Tome]] ·
+[[artifacts/portrait-circle|繪影魔陣 Portrait Circle]] ·
+[[artifacts/spell-composer|咒文起稿匣 Spell Composer]]
+
+**[煉金系 · Transmutation](tags/transmutation)**（2）
+[[artifacts/lectern-of-light|簡報祭壇 Lectern of Light]] ·
+[[artifacts/scribes-hand|卷軸化術 Scribe's Hand]]
+
+**[次元系 · Dimensional](tags/dimensional)**（2）
+[[artifacts/portal-rune|傳送門刻印 Portal Rune]] ·
+[[artifacts/shadow-vault|藏影閣 Shadow Vault]]
+
+**[通靈系 · Binding](tags/binding)**（4）
+[[artifacts/agentpulse|冥想第三眼 AgentPulse]] ·
+[[artifacts/inkseal|印刻術 Inkseal]] ·
+[[artifacts/jaba-ai|共食之契 Jaba]] ·
+[[artifacts/ledger-whisper|帳本監聽術 Ledger Whisper]]
+
+**[聲術系 · Incantation](tags/incantation)**（1）
+[[artifacts/voice-scribe|詠唱辨識器 Voice Scribe]]
 
 或直接進入工坊挑選：**[yazelin.github.io/workshop](https://yazelin.github.io/workshop/)**
 

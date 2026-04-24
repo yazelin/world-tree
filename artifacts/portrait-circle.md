@@ -3,6 +3,7 @@ id: portrait-circle
 name_zh: 繪影魔陣
 name_en: Portrait Circle
 school: 創造系 / Creation
+tags: ["creation"]
 repo: yazelin/nanobanana-pro
 creator: Yaze + Mori
 status: active

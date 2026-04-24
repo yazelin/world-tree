@@ -3,6 +3,7 @@ id: chronocat
 name_zh: 時之貓苑
 name_en: Chronocat
 school: 召喚系 / Summoning
+tags: ["summoning"]
 repo: yazelin/catime
 creator: Yaze + Mori
 birth: 2026-01-30

@@ -3,6 +3,7 @@ id: moodscopia
 name_zh: 心情占卜儀
 name_en: Moodscopia
 school: 幻術系 / Illusion
+tags: ["illusion"]
 repo: yazelin/emoji-slot-machine
 creator: Yaze + Mori
 status: active

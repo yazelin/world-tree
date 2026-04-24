@@ -3,6 +3,7 @@ id: spell-composer
 name_zh: 咒文起稿匣
 name_en: Spell Composer
 school: 創造系 / Creation
+tags: ["creation"]
 repo: yazelin/PromptFill
 creator: Yaze + Mori
 status: active

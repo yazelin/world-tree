@@ -3,6 +3,7 @@ id: lectern-of-light
 name_zh: 簡報祭壇
 name_en: Lectern of Light
 school: 煉金系 / Transmutation
+tags: ["transmutation"]
 repo: yazelin/MD2PPT-Evolution
 creator: Yaze + Mori
 status: active

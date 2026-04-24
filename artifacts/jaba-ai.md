@@ -3,6 +3,7 @@ id: jaba-ai
 name_zh: 共食之契
 name_en: Jaba · 呷爸
 school: 通靈系 / Binding
+tags: ["binding"]
 repo: yazelin/jaba-ai
 creator: Yaze + Mori
 birth: 2025-12-19

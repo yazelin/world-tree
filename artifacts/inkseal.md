@@ -3,6 +3,7 @@ id: inkseal
 name_zh: 印刻術
 name_en: Inkseal
 school: 通靈系 / Binding
+tags: ["binding"]
 repo: yazelin/printer-mcp
 creator: Yaze + Mori
 status: active

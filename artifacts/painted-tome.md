@@ -3,6 +3,7 @@ id: painted-tome
 name_zh: 繪風傳承書
 name_en: Painted Tome
 school: 創造系 / Creation
+tags: ["creation"]
 repo: yazelin/gemini-web
 creator: Yaze + Mori
 status: active

@@ -3,6 +3,7 @@ id: voice-scribe
 name_zh: 詠唱辨識器
 name_en: Voice Scribe
 school: 聲術系 / Incantation
+tags: ["incantation"]
 repo: yazelin/asr-ime-fcitx
 creator: Yaze + Mori
 status: active

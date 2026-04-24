@@ -3,6 +3,7 @@ id: scribes-hand
 name_zh: 卷軸化術
 name_en: Scribe's Hand
 school: 煉金系 / Transmutation
+tags: ["transmutation"]
 repo: yazelin/MD2DOC-Evolution
 creator: Yaze + Mori
 status: active
