@@ -70,12 +70,12 @@ title: "世界樹 · World Tree"
 
 - [[quests/level-0-wanderer|Lv.0 旅人]] — 使用 AI，但 AI 不認得你
 - [[quests/level-1-contractor|Lv.1 契約者]]
-- [[quests/level-2-memorykeeper|Lv.2 記憶保管人]]
-- [[quests/level-3-skillweaver|Lv.3 技能編織者]]
-- [[quests/level-4-fatebinder|Lv.4 命運束縛者]]
-- [[quests/level-5-worldlinker|Lv.5 世界連結者]]
+- [[quests/level-2-memorykeeper|Lv.2 記憶士]]
+- [[quests/level-3-skillweaver|Lv.3 賦能者]]
+- [[quests/level-4-fatebinder|Lv.4 織命者]]
+- [[quests/level-5-worldlinker|Lv.5 通達者]]
 - [[quests/level-6-summoner|Lv.6 召喚師]]
-- [[quests/level-7-forestborn|Lv.7 森生者]]
+- [[quests/level-7-forestborn|Lv.7 森之大魔導師]]
 
 ## 給想自己架設的人
 
