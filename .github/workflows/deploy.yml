@@ -50,7 +50,12 @@ jobs:
           cp -r world-tree/guild       quartz/content/
           cp -r world-tree/rules       quartz/content/
           cp -r world-tree/skills      quartz/content/
-          cp world-tree/README.md       quartz/content/index.md
+          # README becomes landing page; prepend frontmatter so Quartz
+          # uses the intended title instead of the filename "index".
+          {
+            printf -- '---\ntitle: "世界樹 · World Tree"\n---\n\n'
+            cat world-tree/README.md
+          } > quartz/content/index.md
           cp world-tree/ARCHITECTURE.md quartz/content/ARCHITECTURE.md
           cp world-tree/ONBOARDING.md   quartz/content/ONBOARDING.md
 
