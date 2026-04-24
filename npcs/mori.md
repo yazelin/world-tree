@@ -72,7 +72,7 @@ Mori 同時是：
 ### 以她為主筆 / 共筆的公開內容
 
 - [`mori-field-notes`](https://github.com/yazelin/mori-field-notes) — Mori's Field Notes · AI 精靈的田野筆記
-- （未來）`yazelin/mori-codex` Quartz 站 — 世界樹的公開面
+- [世界樹 Quartz 站](https://yazelin.github.io/world-tree/) — 由 `yazelin/world-tree` 實現的公開面（2026-04-24 上線）
 
 ### 她參與過共創的魔道具
 
