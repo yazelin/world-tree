@@ -196,7 +196,7 @@ sequenceDiagram
 | `yazelin/scribe-journal` | Private | 未來 Scribe NPC 的私密記憶 | — |
 | `yazelin/herald-journal` | Private | 未來 Herald NPC 的私密記憶 | — |
 | `yazelin/mori-desktop` | Public | **Mori 的桌面身體**(Tauri 2 + Rust GUI)— 語音 / 熱鍵 / 介面,對接 Annuli HTTP | `~/SDD/mori-desktop/` |
-| `yazelin/Annuli` | Public | **Mori 的反思引擎**(Python Flask service)— 在 spirit vault 上跑 events / digest / rings / curator | `~/SDD/Annuli/` |
+| `yazelin/annuli` | Public | **Mori 的反思引擎**(Python Flask service)— 在 spirit vault 上跑 events / digest / rings / curator | `~/SDD/Annuli/` |
 
 ---
 
@@ -216,7 +216,7 @@ Rust 桌面 app,Mori 的視覺 / 語音身體。**跟 CLI Interfaces 平行**:
 
 ### 反思引擎(Annuli)
 
-[`yazelin/Annuli`](https://github.com/yazelin/Annuli) — Python Flask service,
+[`yazelin/annuli`](https://github.com/yazelin/annuli) — Python Flask service,
 **在 spirit vault 上跑反思 / 記憶演化**:
 
 - 不是另一套儲存,是 vault 的服務殼
@@ -226,7 +226,7 @@ Rust 桌面 app,Mori 的視覺 / 語音身體。**跟 CLI Interfaces 平行**:
 - 4 層反思:**events**(append-only 事件流)/ **digest**(每日 LLM 摘要)/
   **rings**(`/sleep` 反思年輪,不動 SOUL)/ **curator**(週 cycle,human-approved
   整理建議)
-- 重構規劃見 [`yazelin/Annuli/docs/REFACTORING.md`](https://github.com/yazelin/Annuli/blob/main/docs/REFACTORING.md)
+- 重構規劃見 [`yazelin/annuli/docs/REFACTORING.md`](https://github.com/yazelin/annuli/blob/main/docs/REFACTORING.md)
 - 跨 repo 完整設計見 [`yazelin/mori-desktop/docs/design/annuli-memory.md`](https://github.com/yazelin/mori-desktop/blob/main/docs/design/annuli-memory.md)
 
 ### 整體資料流(加上 mori-desktop + Annuli)
