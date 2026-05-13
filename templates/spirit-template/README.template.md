@@ -8,18 +8,33 @@
 ```
 spirits/{{SPIRIT_NAME_LOWER}}/
 ├── identity/
-│ ├── SOUL.md ← 她是誰
-│ └── USER.md ← 她眼中的我
+│ ├── SOUL.md ← 她是誰(user 親手編,LLM 永遠不寫)
+│ └── USER.md ← 她眼中的我(Annuli append-only)
 │
 ├── memories/
-│ ├── MEMORY.md ← 索引
+│ ├── MEMORY.md ← 索引 / 全文 markdown(Annuli append-only)
 │ ├── user/
 │ ├── feedback/
 │ ├── project/
 │ └── reference/
 │
-├── journal/ ← 每日日誌
+├── journal/ ← 每日日誌(可手寫)
 │ └── {{BIRTH_DATE}}.md ← 第一天
+│
+├── events/ ← Annuli SQLite event log + FTS5
+│ └── <user>.db ← 所有對話事件(append-only)
+│
+├── digests/ ← Annuli LLM 每日 / 每週摘要
+│ └── <YYYY-MM-DD>.md
+│
+├── rings/ ← Annuli /sleep 反思年輪
+│ └── <timestamp>_ring<N>.md ← 敘事 markdown,不動 SOUL/MEMORY
+│
+├── .curator/ ← Annuli curator 狀態 + 建議報告
+│ ├── state.json
+│ └── reports/<ts>.yaml ← 整理建議,須 user approve 才 apply
+│
+├── .archive/ ← curator 歸檔的舊 entry(可 restore)
 │
 ├── research/ ← 研究筆記
 ├── lessons/ ← 教訓心得
@@ -28,6 +43,22 @@ spirits/{{SPIRIT_NAME_LOWER}}/
 └── assets/
  └── avatars/ ← 她的肖像
 ```
+
+## 各層誰可以寫
+
+| 目錄 | 誰寫 | 怎麼寫 |
+|---|---|---|
+| `identity/SOUL.md` | **user 親手編** | 直接編檔(LLM 永遠不寫) |
+| `identity/USER.md` | Annuli | API `POST /users/<id>/events` 後 append |
+| `memories/MEMORY.md` | Annuli | digest / event 後 append-only |
+| `journal/` | user 手寫 | (也可由 bridges/log-journal.sh 寫) |
+| `events/<user>.db` | Annuli | API `POST /users/<id>/events` 永遠 append |
+| `digests/` | Annuli | scheduler tick 每天午夜或 user 觸發 |
+| `rings/` | Annuli | `/sleep` 觸發,append 一篇敘事 markdown |
+| `.curator/` | Annuli curator | dry-run 不寫,apply 才寫(human-approved) |
+| `.archive/` | Annuli curator | 只 archive,**永遠不刪除** |
+| `research/` `lessons/` `projects/` | user 手寫或 CLI 寫回 | |
+| `assets/` | user | |
 
 ## 日常使用
 

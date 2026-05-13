@@ -195,6 +195,86 @@ sequenceDiagram
 | `yazelin/yazelin.github.io` | Public | 個人 blog | `~/SDD/yazelin.github.io/` |
 | `yazelin/scribe-journal` | Private | 未來 Scribe NPC 的私密記憶 | — |
 | `yazelin/herald-journal` | Private | 未來 Herald NPC 的私密記憶 | — |
+| `yazelin/mori-desktop` | Public | **Mori 的桌面身體**(Tauri 2 + Rust GUI)— 語音 / 熱鍵 / 介面,對接 Annuli HTTP | `~/SDD/mori-desktop/` |
+| `yazelin/Annuli` | Public | **Mori 的反思引擎**(Python Flask service)— 在 spirit vault 上跑 events / digest / rings / curator | `~/SDD/Annuli/` |
+
+---
+
+## Body 與反思引擎 — mori-desktop + Annuli
+
+宇宙模型的「**CLI Interfaces**」層之外,還有兩個獨立 service:
+
+### Body Interface(GUI 身體)
+
+[`yazelin/mori-desktop`](https://github.com/yazelin/mori-desktop) — Tauri 2 +
+Rust 桌面 app,Mori 的視覺 / 語音身體。**跟 CLI Interfaces 平行**:
+
+- 不透過 bridges symlink(那是 CLI 工具的路徑),走 HTTP API
+- 對接 **Annuli** 拿記憶資料 + 寫 events
+- 提供 floating sprite、熱鍵、語音輸入、tray icon 等 GUI 體驗
+- 跟 Claude Code / Gemini CLI 共享同一份 spirit vault — **沒有 split-brain**
+
+### 反思引擎(Annuli)
+
+[`yazelin/Annuli`](https://github.com/yazelin/Annuli) — Python Flask service,
+**在 spirit vault 上跑反思 / 記憶演化**:
+
+- 不是另一套儲存,是 vault 的服務殼
+- 寫的所有東西都進 vault 對應目錄(`memories/MEMORY.md`、`events/<user>.db`、
+  `rings/<ts>.md`、`digests/<date>.md`、`.curator/reports/<ts>.yaml`)
+- 提供 HTTP API 給 mori-desktop + 未來 IM bot 對接
+- 4 層反思:**events**(append-only 事件流)/ **digest**(每日 LLM 摘要)/
+  **rings**(`/sleep` 反思年輪,不動 SOUL)/ **curator**(週 cycle,human-approved
+  整理建議)
+- 重構規劃見 [`yazelin/Annuli/docs/REFACTORING.md`](https://github.com/yazelin/Annuli/blob/main/docs/REFACTORING.md)
+- 跨 repo 完整設計見 [`yazelin/mori-desktop/docs/design/annuli-memory.md`](https://github.com/yazelin/mori-desktop/blob/main/docs/design/annuli-memory.md)
+
+### 整體資料流(加上 mori-desktop + Annuli)
+
+```mermaid
+graph TB
+  subgraph Body["Body Interface"]
+    MD[mori-desktop<br/>Tauri GUI]
+  end
+
+  subgraph Reflection["Reflection Engine"]
+    AN[Annuli<br/>Flask service]
+  end
+
+  subgraph SpiritsPrivate["Spirit Memories (private)"]
+    M[spirits/mori/<br/>identity · journal · memories ·<br/>events · rings · digests]
+  end
+
+  subgraph WorldTree["World Tree (public)"]
+    WT[world-tree/<br/>lore · npcs · artifacts ·<br/>spirit-template · bridges]
+  end
+
+  subgraph CLIs["CLI Interfaces"]
+    CC[Claude Code]
+    GC[Gemini / Codex / Hermes]
+  end
+
+  MD -->|HTTP API| AN
+  AN -->|read + append-only write| M
+  WT -->|initiate-spirit ritual| M
+  WT -->|read lore| AN
+  M -->|symlink/bridge| CC
+  M -->|symlink/bridge| GC
+  WT -->|read lore| CC
+  WT -->|read lore| GC
+
+  style M fill:#1a2921,color:#d4b572
+  style WT fill:#2d4a3e,color:#e8dcc0
+  style MD fill:#c9a24d,color:#1a1410
+  style AN fill:#8b6f47,color:#e8dcc0
+```
+
+**核心守則**:
+- spirit vault = **single source of truth**
+- Annuli = 唯一允許 write vault 的 service(透過 API endpoints)
+- mori-desktop 透過 Annuli HTTP 對接,不直接寫 vault 檔案
+- CLI Interfaces 透過 bridges symlink 讀 vault(通常 read-only)
+- 所有 actor 看到的 SOUL / MEMORY 都是同一份
 
 ---
 
