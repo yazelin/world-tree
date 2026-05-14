@@ -195,8 +195,8 @@ sequenceDiagram
 | `yazelin/yazelin.github.io` | Public | 個人 blog | `~/SDD/yazelin.github.io/` |
 | `yazelin/scribe-journal` | Private | 未來 Scribe NPC 的私密記憶 | — |
 | `yazelin/herald-journal` | Private | 未來 Herald NPC 的私密記憶 | — |
-| `yazelin/mori-desktop` | Public | **Mori 的桌面身體**(Tauri 2 + Rust GUI)— 語音 / 熱鍵 / 介面,對接 Annuli HTTP | `~/SDD/mori-desktop/` |
-| `yazelin/annuli` | Public | **Mori 的反思引擎**(Python Flask service)— 在 spirit vault 上跑 events / digest / rings / curator | `~/SDD/Annuli/` |
+| `yazelin/mori-desktop` | Public | **Mori 的桌面身體**(Tauri 2 + Rust GUI)— 語音 / 熱鍵 / 介面,對接 Annuli HTTP | `~/mori/mori-desktop/` |
+| `yazelin/annuli` | Public | **Mori 的反思引擎**(Python Flask service)— 在 spirit vault 上跑 events / digest / rings / curator | `~/mori/annuli/` |
 
 ---
 
@@ -220,14 +220,28 @@ Rust 桌面 app,Mori 的視覺 / 語音身體。**跟 CLI Interfaces 平行**:
 **在 spirit vault 上跑反思 / 記憶演化**:
 
 - 不是另一套儲存,是 vault 的服務殼
-- 寫的所有東西都進 vault 對應目錄(`memories/MEMORY.md`、`events/<user>.db`、
+- 寫的所有東西都進 vault 對應目錄(`memories/MEMORY.md`、`events/<date>.md`、
   `rings/<ts>.md`、`digests/<date>.md`、`.curator/reports/<ts>.yaml`)
 - 提供 HTTP API 給 mori-desktop + 未來 IM bot 對接
 - 4 層反思:**events**(append-only 事件流)/ **digest**(每日 LLM 摘要)/
   **rings**(`/sleep` 反思年輪,不動 SOUL)/ **curator**(週 cycle,human-approved
   整理建議)
-- 重構規劃見 [`yazelin/annuli/docs/REFACTORING.md`](https://github.com/yazelin/annuli/blob/main/docs/REFACTORING.md)
+
+#### 當前進度(2026-05)
+
+- **Wave 2 已落地**(squash merge `0e6cec1`)— `src/annuli/{core,creator}/`
+  雙 sub-package 物理拆分完成,`engine.py` 從 2489 行縮成 71 行 re-export shim,
+  `admin.py` 拆成兩個獨立 Flask app(core / creator 各自 port)
+- **Wave 3 進行中**(branch [`refactor/4-layer-reflection`](https://github.com/yazelin/annuli/tree/refactor/4-layer-reflection))—
+  設計 freeze 於 [`docs/WAVE-3-DESIGN.md`](https://github.com/yazelin/annuli/blob/refactor/4-layer-reflection/docs/WAVE-3-DESIGN.md):
+  events / digest / curator 從 stub 填實、do_reflect → do_sleep(LLM 永不重寫
+  persona)、vault 路徑改 `~/mori-universe/spirits/<name>/`、PUT /soul 加
+  `X-Soul-Token` middleware
+
+#### 設計來源
+
 - 跨 repo 完整設計見 [`yazelin/mori-desktop/docs/design/annuli-memory.md`](https://github.com/yazelin/mori-desktop/blob/main/docs/design/annuli-memory.md)
+- 內部畫線理由見 [`yazelin/annuli/docs/REFACTORING.md`](https://github.com/yazelin/annuli/blob/main/docs/REFACTORING.md)
 
 ### 整體資料流(加上 mori-desktop + Annuli)
 
