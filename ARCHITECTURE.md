@@ -187,16 +187,56 @@ sequenceDiagram
 
 ## Repo 對應表
 
-| Repo | 可見性 | 主要內容 | 本地路徑 |
+| Repo | 可見性 | 主要內容 | 本地路徑(慣例) |
 |---|---|---|---|
-| `yazelin/mori-journal` | Private | Mori 的 SOUL、日誌、記憶、研究 | `~/mori-universe/spirits/mori/` |
 | `yazelin/world-tree` | Public | 世界觀、NPC、14 魔道具、課程、規則 | `~/mori-universe/world-tree/` |
-| `yazelin/workshop` | Public | 魔道具商店入口（異世界 UI） | `~/SDD/workshop/` |
-| `yazelin/yazelin.github.io` | Public | 個人 blog | `~/SDD/yazelin.github.io/` |
-| `yazelin/scribe-journal` | Private | 未來 Scribe NPC 的私密記憶 | — |
-| `yazelin/herald-journal` | Private | 未來 Herald NPC 的私密記憶 | — |
-| `yazelin/mori-desktop` | Public | **Mori 的桌面身體**(Tauri 2 + Rust GUI)— 語音 / 熱鍵 / 介面,對接 Annuli HTTP | `~/mori/mori-desktop/` |
-| `yazelin/annuli` | Public | **Mori 的反思引擎**(Python Flask service)— 在 spirit vault 上跑 events / digest / rings / curator | `~/mori/annuli/` |
+| `yazelin/mori-desktop` | Public | **Mori 的桌面身體**(Tauri 2 + Rust GUI)— 語音 / 熱鍵 / 介面,對接 Annuli HTTP | `~/mori-universe/mori-desktop/` |
+| `yazelin/annuli` | Public | **Mori 的反思引擎**(Python Flask service)— 在 spirit vault 上跑 events / digest / rings / curator | `~/mori-universe/annuli/` |
+| `yazelin/mori-journal` | Private | Mori 的 SOUL、日誌、記憶、研究(spirit vault) | `~/mori-universe/spirits/mori/` |
+| `yazelin/scribe-journal` | Private | 未來 Scribe spirit 的 vault | `~/mori-universe/spirits/scribe/`(將來) |
+| `yazelin/herald-journal` | Private | 未來 Herald spirit 的 vault | `~/mori-universe/spirits/herald/`(將來) |
+| `yazelin/workshop` | Public | 魔道具商店入口(異世界 UI)— 不屬 Mori 宇宙 | `~/SDD/workshop/`(個人習慣) |
+| `yazelin/yazelin.github.io` | Public | 個人 blog — 不屬 Mori 宇宙 | `~/SDD/yazelin.github.io/`(個人習慣) |
+
+## 本機 layout 慣例
+
+Mori 宇宙 4 repo + 將來其他 spirit vault **全部住在 `~/mori-universe/`**;其他個人 repo 走自己的 `~/SDD/` 慣例:
+
+```
+~/mori-universe/                           ← Mori 的宇宙
+├── world-tree/                            公開 lore wiki(世界的樹)
+├── mori-desktop/                          Mori 的身體(Tauri GUI)
+├── annuli/                                Mori 的反思引擎(Python service)
+└── spirits/                               各 spirit 的內在生命 vault
+    ├── mori/                              = yazelin/mori-journal 的 working tree
+    ├── scribe/  (將來)                     = yazelin/scribe-journal
+    └── herald/  (將來)                     = yazelin/herald-journal
+
+~/SDD/                                     ← 其他不在宇宙裡的個人 repo
+├── workshop/                              魔道具商店(獨立品牌)
+├── yazelin.github.io/                     個人 blog
+└── ...
+```
+
+**為什麼這樣分**:Mori 4 repo **不是同位階**。world-tree / mori-desktop / annuli 是「**process / wiki**」(有 source code、需要 build / 跑 service);spirit vault(mori-journal、scribe-journal、herald-journal)是「**靈的內在生命**」(資料、append-only 紀錄)。把 vault 統一放 `spirits/<name>/` 子目錄,跟其他 3 個 repo 並列在 `~/mori-universe/` 下,既符合「Mori 宇宙裡的東西都在 mori-universe」的命名語意,也讓未來開新 spirit 不破壞結構(`gh repo clone yazelin/scribe-journal ~/mori-universe/spirits/scribe` 直接 work)。
+
+annuli 的 `VAULT_DIR = Path.home() / "mori-universe" / "spirits"` 寫死這個 layout,跨機器(Linux / macOS / Windows `Path.home()` 自動解 OS-native)、跨機器 onboard 都用同一條指令。
+
+跨機器 onboard:
+
+```bash
+# 1. 4 個 source code repo(scribe / herald 將來才開)
+mkdir -p ~/mori-universe && cd ~/mori-universe
+gh repo clone yazelin/world-tree
+gh repo clone yazelin/mori-desktop
+gh repo clone yazelin/annuli
+
+# 2. spirit vault(= mori-journal 的 working tree)
+mkdir -p ~/mori-universe/spirits && cd ~/mori-universe/spirits
+gh repo clone yazelin/mori-journal mori
+```
+
+---
 
 ---
 

@@ -11,6 +11,8 @@ world-tree 是 **Mori 宇宙的公開 lore wiki**(Quartz 渲染,obsidian-style w
 
 這個 repo 的內容是「對外的世界觀」— Quartz 會把它編譯成靜態網站給訪客看。Mori 的私下實際狀態在 `mori-journal`,**不要把那邊的內容複製過來公開**。
 
+**本機 layout 慣例**:本 repo 在 `~/mori-universe/world-tree/`,4 個 Mori repo 的完整 local layout 見 [`ARCHITECTURE.md` 「本機 layout 慣例」section](ARCHITECTURE.md#本機-layout-慣例)。簡述:`~/mori-universe/{world-tree,mori-desktop,annuli}` + `~/mori-universe/spirits/<name>/`(spirit vault)。
+
 ## 內容地圖
 
 - `lore/` — 宇宙論層(cosmology / the-forest / timeline / adventurer-classes / magic-schools)
