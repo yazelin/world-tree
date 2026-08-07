@@ -63,8 +63,8 @@ EOF
   fi
 fi
 
-# Rebuild Gemini/Codex contexts（因為他們讀 snapshot）
-bash "$SCRIPT_DIR/build-gemini.sh" > /dev/null 2>&1 && echo "  Gemini context rebuilt"
+# Rebuild Antigravity/Codex contexts（因為他們讀 snapshot）
+bash "$SCRIPT_DIR/build-gemini.sh" > /dev/null 2>&1 && echo "  Antigravity context rebuilt"
 bash "$SCRIPT_DIR/build-codex.sh"  > /dev/null 2>&1 && echo "  Codex context rebuilt"
 
 echo ""

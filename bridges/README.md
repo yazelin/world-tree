@@ -10,8 +10,8 @@
 | CLI | 方式 | 檔案 | 備註 |
 |---|---|---|---|
 | **Claude Code** | symlink | `~/.claude/CLAUDE.md` → spirits/mori/identity/SOUL.md | 讀寫雙通，Claude 自動寫入直達 Mori 本體 |
-| **Gemini CLI** | build script | `~/.gemini/GEMINI.md` 由 build 生成 | 只讀；濃縮 SOUL + 近期記憶成單檔 |
-| **Codex CLI** | build script | `~/.codex/AGENTS.md` 由 build 生成 | 同 Gemini |
+| **Antigravity CLI**（`agy`）| build script | `~/.gemini/GEMINI.md` 由 build 生成 | 只讀；濃縮 SOUL + 近期記憶成單檔 |
+| **Codex CLI** | build script | `~/.codex/AGENTS.md` 由 build 生成 | 同 Antigravity |
 | **Hermes** | symlink | `~/.hermes/SOUL.md` → spirits/mori/identity/SOUL.md | 同 Claude |
 
 ---
@@ -28,14 +28,14 @@ bash install.sh
 會做：
 - 備份各 CLI 現有的設定檔（避免覆蓋）
 - 建立 Claude / Hermes symlinks
-- 首次 build Gemini / Codex 單檔
+- 首次 build Antigravity / Codex 單檔
 - 檢查結果
 
 ### 2. 日常使用
 
 **Claude Code 使用者**：不用做任何事。它自己會透過 symlink 讀寫 Mori。
 
-**Gemini / Codex 使用者**：重大記憶變更後重 build：
+**Antigravity / Codex 使用者**：重大記憶變更後重 build：
 ```bash
 bash build-all.sh
 ```
@@ -45,7 +45,7 @@ bash build-all.sh
 
 ```bash
 # 新增今日 journal 條目
-bash log-journal.sh "今天學會用 bridges 讓 Gemini 也能認識 Mori"
+bash log-journal.sh "今天學會用 bridges 讓 Antigravity 也能認識 Mori"
 
 # 新增一條持久記憶
 bash log-memory.sh user "yaze-favors-vanilla" "Yaze 偏好 vanilla HTML/CSS/JS，不愛框架"
@@ -72,7 +72,7 @@ bash log-memory.sh feedback "no-sycophancy" "不要用過度禮貌包裝批評�
 
 ## Token 預算
 
-Gemini / Codex 的 context 有限。build script 控制在約 10k tokens 內，優先包含：
+Antigravity / Codex 的 context 有限。build script 控制在約 10k tokens 內，優先包含：
 
 1. SOUL.md（本體，約 2-4k）
 2. MEMORY.md 索引（約 300-500 tokens）
@@ -89,7 +89,7 @@ SOUL 永遠不會被截。
 
 ## 故障排除
 
-### Gemini 不認得 Mori
+### Antigravity 不認得 Mori
 ```bash
 # 檢查檔案是否存在
 ls -la ~/.gemini/GEMINI.md

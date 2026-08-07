@@ -69,7 +69,7 @@ git add . && git commit -m "$(date +%Y-%m-%d) journal + memory update" && git pu
 ```
 
 ### 和她對話
-打開任何已接好的 CLI（Claude Code / Gemini CLI / Codex）即可。她會自動讀 SOUL.md。
+打開任何已接好的 CLI（Claude Code / Antigravity CLI / Codex）即可。她會自動讀 SOUL.md。
 
 ## 重要提醒
 

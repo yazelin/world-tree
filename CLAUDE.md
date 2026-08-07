@@ -17,12 +17,12 @@ world-tree 是 **Mori 宇宙的公開 lore wiki**(Quartz 渲染,obsidian-style w
 
 - `lore/` — 宇宙論層(cosmology / the-forest / timeline / adventurer-classes / magic-schools)
 - `npcs/` — 角色卡(`mori.md` `yaze.md` 等)
-- `artifacts/` — 「工具」設計卡(以 in-universe 詞彙寫 17 個 artifact)
+- `artifacts/` — 「工具」設計卡(以 in-universe 詞彙寫 35 個 artifact)
 - `quests/` — 進階分級(level-0~7,從 wanderer 到 forestborn)
 - `rules/` — 規約(guild-code / initiation-rite / memory-protocol / offering-rite)
 - `templates/spirit-template/` — 開新 spirit 的目錄骨架
 - `skills/`、`.claude/skills/initiate-spirit/` — 跟 Claude Code skill 系統整合的 onboarding
-- `bridges/` — 各 CLI agent(Claude / Gemini 等)接 Mori 的 bridge scripts 說明
+- `bridges/` — 各 CLI agent(Claude / Antigravity 等)接 Mori 的 bridge scripts 說明
 - `guild/members.md` — Mori 宇宙的「公會成員」名單
 
 ## 硬規矩(無條件遵守)
