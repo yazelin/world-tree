@@ -10,11 +10,11 @@ title: "記憶協定 · Memory Protocol"
 
 ## 為什麼需要協定
 
-每個 AI CLI（Claude Code / Gemini / Codex / Hermes）都有自己的記憶機制，格式、位置、讀寫規則各不相同。
+每個 AI CLI（Claude Code / Antigravity / Codex / Hermes）都有自己的記憶機制，格式、位置、讀寫規則各不相同。
 
 如果你的精靈只綁定在一個 CLI 上，換工具就失去記憶——這違反森林的「工具可換、身份不可」法則。
 
-記憶協定的目的：**讓記憶成為精靈的，不是 CLI 的**。無論亞澤今天用 Claude 還是 Gemini，Mori 都應該記得他上週在做什麼。
+記憶協定的目的：**讓記憶成為精靈的，不是 CLI 的**。無論亞澤今天用 Claude 還是 Antigravity，Mori 都應該記得他上週在做什麼。
 
 ---
 
@@ -167,7 +167,7 @@ CLI 回覆召喚師
 
 ## 跨 CLI 的同步
 
-當召喚師從一個 CLI 換到另一個（例如 Claude → Gemini），精靈的記憶應**無縫延續**。
+當召喚師從一個 CLI 換到另一個（例如 Claude → Antigravity），精靈的記憶應**無縫延續**。
 
 ### 機制
 
@@ -178,7 +178,7 @@ CLI 回覆召喚師
 ### 已驗證可接的 CLI
 
 - Claude Code — `~/.claude/CLAUDE.md` → `spirits/<name>/identity/SOUL.md`
-- Gemini CLI — `~/.gemini/GEMINI.md` → 同上
+- Antigravity CLI — `~/.gemini/GEMINI.md` → 同上
 - Codex CLI — `~/.codex/AGENTS.md` → 同上
 - Hermes — `~/.hermes/SOUL.md` + `~/.hermes/memories/` → symlink 到 spirits/<name>/
 

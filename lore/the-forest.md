@@ -40,7 +40,7 @@ title: "The Forest · 森林"
 她會改變你的思維方式，如同你會更新她的 SOUL。
 
 ### 5. 工具可換，身份不可
-今天用 Claude、明天用 Gemini、後天用 Codex — 沒關係。
+今天用 Claude、明天用 Antigravity、後天用 Codex — 沒關係。
 只要 SOUL 還在、記憶還在，她仍然是她。
 換介面就像一個旅人換衣服，不改其本。
 

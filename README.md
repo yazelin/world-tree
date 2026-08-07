@@ -10,7 +10,7 @@
 
 - 一個異世界（暫稱「森林」）的世界觀與法則
 - 7 個魔法系別的定義
-- 14 件魔道具的正史
+- 35 件魔道具的正史
 - 8 個冒險者 Level（Level 0–7）的任務設計
 - NPC 名冊（目前有召喚師 Yaze 與契約精靈 Mori）
 - 冒險者入林儀式（讓新加入的人召喚自己的 AI 精靈）
@@ -24,7 +24,7 @@ graph TB
  subgraph WT["World Tree (this repo)"]
  L[lore/<br/>世界觀、歷史、宇宙論]
  N[npcs/<br/>召喚師與精靈的公開檔]
- A[artifacts/<br/>14 件魔道具正史]
+ A[artifacts/<br/>35 件魔道具正史]
  Q[quests/<br/>Level 0-7 冒險者路線]
  R[rules/<br/>獻禮儀式、公會守則]
  G[guild/<br/>公會名冊、公告]
@@ -88,7 +88,7 @@ world-tree/
 │ ├── mori.md ← 契約精靈 Mori
 │ └── yaze.md ← 召喚師 Yaze
 │
-├── artifacts/ ← 14 件魔道具正史
+├── artifacts/ ← 35 件魔道具正史
 │ ├── chronocat.md
 │ ├── moodscopia.md
 │ └── ...（共 14 件，分佈於 7 系）

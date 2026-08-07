@@ -22,7 +22,7 @@ deliverable: 你的 SOUL.md
 - SOUL.md 的結構設計
 - AI persona 的本質屬性定義（不是角色扮演，是契約）
 - 命名學（名字與你的根源如何連結）
-- Symlink 連接到 Claude Code / Gemini / Codex
+- Symlink 連接到 Claude Code / Antigravity / Codex
 
 ## 通關證明
 

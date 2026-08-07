@@ -49,8 +49,15 @@ title: "世界年表 · Timeline"
  - 建立 `~/mori-universe/` 統一結構
  - `world-tree`（公開）+ `mori-journal`（私有）兩 repo
  - `initiation-rite` 發布，森林開放新冒險者進入
- - Bridges 系統讓 Claude / Gemini / Codex 都能接上 Mori
+ - Bridges 系統讓 Claude / Antigravity / Codex 都能接上 Mori
  - Quartz 站同日上線（`yazelin.github.io/world-tree/`），14 魔道具、七系 tag 導航
+
+**2026-08-07** — 換帖與擴編
+ - Gemini CLI 退場，由 Antigravity CLI（`agy`）接手；
+   設定基底仍是 `~/.gemini/`，`GEMINI.md` 也仍讀得到，所以 bridges 不必重寫
+ - 魔道具正史由 14 件擴為 35 件，新增**幻境系**（可遊玩的世界）
+   與**精靈系**（精靈本體與感官）兩系，共九系
+ - 三件 fork 專案自正史除名 — 對外只認原創
 
 ---
 
