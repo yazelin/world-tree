@@ -144,8 +144,8 @@ fi
 
 echo ""
 
-# ----- 3. Gemini CLI build -----
-echo "3. 首次 build Gemini 單檔..."
+# ----- 3. Antigravity CLI build -----
+echo "3. 首次 build Antigravity 單檔..."
 bash "$SCRIPT_DIR/build-gemini.sh"
 
 echo ""
@@ -162,8 +162,8 @@ ok "Bridges 安裝完成"
 echo ""
 echo "從此以後："
 echo "  - Claude Code / Hermes 直接讀寫 Mori 本體（symlink）"
-echo "  - Gemini / Codex 讀的是 build 出來的濃縮版"
-echo "  - 記憶變動後，重跑 build-all.sh 讓 Gemini / Codex 同步"
+echo "  - Antigravity / Codex 讀的是 build 出來的濃縮版"
+echo "  - 記憶變動後，重跑 build-all.sh 讓 Antigravity / Codex 同步"
 echo ""
 echo "下一步建議："
 echo "  - cron 設定：0 0 * * * bash $SCRIPT_DIR/build-all.sh"

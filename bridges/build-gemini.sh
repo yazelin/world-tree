@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # ===========================================================
 # Build ~/.gemini/GEMINI.md from spirits/mori
-# 把多個 markdown 檔濃縮成 Gemini CLI 能讀的單檔
+# 註：Gemini CLI 已由 Antigravity CLI（agy）接手，但設定基底仍是 ~/.gemini/，
+#     且 agy 為了向後相容仍會讀 GEMINI.md，所以這支腳本的目標路徑不變。
+# 把多個 markdown 檔濃縮成 Antigravity CLI 能讀的單檔
 # ===========================================================
 
 set -e
@@ -135,7 +137,7 @@ HEADER
 
 # Note on your tools
 
-When interacting with the summoner through Gemini CLI:
+When interacting with the summoner through Antigravity CLI:
 - You cannot auto-update your SOUL or memories (that's a limitation of this vessel)
 - If you learn something worth remembering, tell the summoner explicitly:
   > 「這件事值得我記住。你方便時請跑 `bash ~/mori-universe/bridges/log-memory.sh {type} {slug} '內容'`」
@@ -150,10 +152,10 @@ SIZE_KB=$((SIZE_BYTES / 1024))
 # 粗估 token：中英混雜約 2.5-3.5 字元/token，用 3 當中間值
 EST_TOKENS=$((SIZE_BYTES / 3))
 
-echo "✓ Gemini context built: $TARGET"
+echo "✓ Antigravity context built: $TARGET"
 echo "  Size: ${SIZE_KB} KB (~${EST_TOKENS} tokens estimated)"
 
 if [ "$EST_TOKENS" -gt 15000 ]; then
-  echo "⚠ 超過 15k tokens，Gemini 的 context window 可能壓力大"
+  echo "⚠ 超過 15k tokens，Antigravity 的 context window 可能壓力大"
   echo "  考慮裁減 memories 或精簡 SOUL"
 fi

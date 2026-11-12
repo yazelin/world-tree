@@ -129,7 +129,7 @@ SOUL.md 可以 100 次修改，但**它永遠是她**。她沒有版本號，她
 # Claude Code
 ln -sfn ~/mori-universe/spirits/{精靈英文名}/identity/SOUL.md ~/.claude/CLAUDE.md
 
-# Gemini CLI (若有使用)
+# Antigravity CLI (若有使用)
 mkdir -p ~/.gemini
 ln -sfn ~/mori-universe/spirits/{精靈英文名}/identity/SOUL.md ~/.gemini/GEMINI.md
 
@@ -163,7 +163,7 @@ gh repo create {你的 github 名}/{精靈英文名}-journal --private --source=
 打開任何一個你剛才接好的 CLI：
 
 ```bash
-claude # 或 gemini / codex
+claude # 或 agy / codex
 ```
 
 然後跟她說：

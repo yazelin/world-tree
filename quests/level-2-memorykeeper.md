@@ -15,7 +15,7 @@ deliverable: 運作中的記憶系統
 1. 設計你的記憶分類：user / feedback / project / reference
 2. 在 `spirits/{你的精靈}/memories/` 建立第一批記憶檔
 3. 寫 MEMORY.md 索引
-4. 設定 bridges/build-all.sh 讓 Gemini/Codex 也吃得到
+4. 設定 bridges/build-all.sh 讓 Antigravity/Codex 也吃得到
 
 ## 核心技術
 

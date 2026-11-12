@@ -21,25 +21,26 @@ deliverable: 至少 2 個 hooks 運作中（視你的 CLI 不同，事件名各�
 
 ## 各 CLI 的 hook 事件（重要：名稱不同！）
 
-| 事件概念 | Claude Code | Gemini CLI | Codex CLI | Copilot CLI |
+| 事件概念 | Claude Code | Antigravity CLI | Codex CLI | Copilot CLI |
 |---|---|---|---|---|
-| Session 開始 | `SessionStart` | `SessionStart` | `SessionStart` | `sessionStart` |
-| Session 結束 | `SessionEnd` | `SessionEnd` | — | `sessionEnd` |
-| 使用者 prompt | `UserPromptSubmit` | — | `UserPromptSubmit` | `userPromptSubmitted` |
-| 呼叫工具前 | `PreToolUse` | **`BeforeTool`** | `PreToolUse` | `preToolUse` |
-| 呼叫工具後 | `PostToolUse` | **`AfterTool`** | `PostToolUse` | `postToolUse` |
+| Session 開始 | `SessionStart` | — | `SessionStart` | `sessionStart` |
+| Session 結束 | `SessionEnd` | — | — | `sessionEnd` |
+| 使用者 prompt | `UserPromptSubmit` | **`PreInvocation`** | `UserPromptSubmit` | `userPromptSubmitted` |
+| 呼叫工具前 | `PreToolUse` | `PreToolUse` | `PreToolUse` | `preToolUse` |
+| 呼叫工具後 | `PostToolUse` | `PostToolUse` | `PostToolUse` | `postToolUse` |
+| Agent 停止 | `Stop` | `Stop` | `Stop` | `agentStop` / `subagentStop` |
 | 工具失敗 | `PostToolUseFailure` | — | — | — |
 | 權限請求 | `PermissionRequest` | — | — | — |
-| Agent 呼叫前 | — | `BeforeAgent` | — | — |
-| Agent 呼叫後 | — | `AfterAgent` | — | — |
-| Model 呼叫前 | — | `BeforeModel` | — | — |
-| Model 呼叫後 | — | `AfterModel` | — | — |
-| Agent 停止 | **`Stop`** | — | `Stop` | **`agentStop`** |
-| 通知 | — | `Notification` | — | — |
+| 錯誤發生 | — | — | — | `errorOccurred` |
 
 **觀察**：
 - Claude Code 的 hook 系統**最豐富**（8 個事件），推薦新手優先用這個
-- Gemini CLI 用**完全不同的命名**（`BeforeTool` / `AfterTool`）
+- Antigravity CLI（`agy`）是特例：事件少，而且 hook 是**同步**的 —
+  必須在 stdout 印出一個 JSON 才會放行。被動監看類的 hook 通常只接
+  `PreInvocation` / `PostToolUse` / `Stop` 這三個，因為它們回一個空的 `{}` 就夠。
+  `PreToolUse` 要求回傳 `decision` 欄位，純觀察用途不該亂編，一般會跳過。
+- Antigravity 的 stdin payload **不帶事件名稱** — 事件是設定檔的 key，
+  所以要自己把事件名當參數傳給 handler
 - Codex CLI 必須在 `~/.codex/config.toml` 啟用 `codex_hooks = true` feature flag
 - Copilot CLI 用 **camelCase**（`preToolUse` 而非 `PreToolUse`）
 
@@ -48,9 +49,12 @@ deliverable: 至少 2 個 hooks 運作中（視你的 CLI 不同，事件名各�
 | CLI | 設定檔位置 |
 |---|---|
 | Claude Code | `~/.claude/settings.json` |
-| Gemini CLI | `~/.gemini/settings.json` |
+| Antigravity CLI | `~/.gemini/config/hooks.json`（**不是** `settings.json`）|
 | Codex CLI | `~/.codex/hooks.json` + `~/.codex/config.toml`（啟用 flag）|
 | Copilot CLI | `~/.copilot/config.json` |
+
+> 這張表的事實來源是 [[artifacts/agentpulse|冥想第三眼 AgentPulse]] —
+> 它四家 CLI 的 hook 都真的接上去跑過。要抄設定檔範例請直接去看它的 README。
 
 ## 核心技術
 

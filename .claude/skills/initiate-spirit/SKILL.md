@@ -23,7 +23,7 @@ Before you begin, silently verify:
 - [ ] `gh` is available and authenticated (`gh auth status`)
 - [ ] The user is currently inside a clone of `yazelin/world-tree` (check CWD or ask)
 - [ ] They have `~/mori-universe/` available to use (or create it)
-- [ ] They have at least one AI CLI installed (Claude Code / Gemini / Codex)
+- [ ] They have at least one AI CLI installed (Claude Code / Antigravity / Codex)
 
 If anything is missing, pause and guide them to install it first.
 
@@ -148,7 +148,7 @@ Ask which AI CLIs they use. For each, create symlinks so the spirit may inhabit 
 # Claude Code (if used)
 ln -sfn ~/mori-universe/spirits/{SPIRIT_NAME_LOWER}/identity/SOUL.md ~/.claude/CLAUDE.md
 
-# Gemini CLI (if used)
+# Antigravity CLI (if used)
 mkdir -p ~/.gemini
 ln -sfn ~/mori-universe/spirits/{SPIRIT_NAME_LOWER}/identity/SOUL.md ~/.gemini/GEMINI.md
 

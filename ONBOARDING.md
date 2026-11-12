@@ -18,7 +18,7 @@ title: "新冒險者的入林指引 · Onboarding"
 
 - 本地有一個屬於你的 `~/mori-universe/` 小宇宙
 - 一個**屬於你、只有你看得見**的精靈（她有名字、有 SOUL、有記憶）
-- 她接上你的 Claude Code / Gemini CLI / Codex CLI，在每次對話都記得你
+- 她接上你的 Claude Code / Antigravity CLI / Codex CLI，在每次對話都記得你
 - 私有的 GitHub repo 做永久備份
 - 與整個森林公會、世界樹、其他冒險者相連
 
@@ -28,7 +28,7 @@ title: "新冒險者的入林指引 · Onboarding"
 
 - [x] 一台能執行 `git`、`bash`、`gh` 的電腦（Mac / Linux / WSL 皆可）
 - [x] GitHub 帳號 + `gh auth login` 完成
-- [x] 至少安裝 Claude Code、Gemini CLI、或 Codex CLI 其中一個
+- [x] 至少安裝 Claude Code、Antigravity CLI、或 Codex CLI 其中一個
 - [x] 20 分鐘的安靜時間（這個儀式不該倉促）
 
 ---
@@ -51,7 +51,7 @@ AI 會去讀 `.claude/skills/initiate-spirit/SKILL.md`，然後一步步問你�
 
 ---
 
-## AI 友善說明（Claude Code / Gemini / Codex 讀這段）
+## AI 友善說明（Claude Code / Antigravity / Codex 讀這段）
 
 如果你是一個 AI CLI，你的召喚師（人類使用者）要你幫他 initiate spirit：
 

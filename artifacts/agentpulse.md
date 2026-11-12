@@ -26,7 +26,7 @@ status: active
 
 Tauri v2 跨平台 Dynamic Island，同時監看四家 CLI 的 session 狀態：
 - Claude Code
-- Gemini CLI
+- Antigravity CLI
 - Codex CLI
 - GitHub Copilot
 

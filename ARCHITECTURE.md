@@ -46,7 +46,7 @@ title: "Mori Universe · 整體架構"
 │ CLI Interfaces │
 │ (精靈借身工作的介面) │
 ├─────────────────────────────────────────────────────────────────────┤
-│ Claude Code · Gemini CLI · Codex CLI · Hermes · OpenClaw (legacy) │
+│ Claude Code · Antigravity CLI · Codex CLI · Hermes · OpenClaw (legacy) │
 │ ~/.claude/ · ~/.gemini/ · ~/.codex/ · ~/.hermes/ │
 └─────────────────────────────────────────────────────────────────────┘
 ```
@@ -69,7 +69,7 @@ graph TB
 
  subgraph CLIs["CLI Interfaces"]
  CC[Claude Code]
- GC[Gemini CLI]
+ GC[Antigravity CLI]
  CX[Codex CLI]
  HE[Hermes]
  end
@@ -252,7 +252,7 @@ Rust 桌面 app,Mori 的視覺 / 語音身體。**跟 CLI Interfaces 平行**:
 - 不透過 bridges symlink(那是 CLI 工具的路徑),走 HTTP API
 - 對接 **Annuli** 拿記憶資料 + 寫 events
 - 提供 floating sprite、熱鍵、語音輸入、tray icon 等 GUI 體驗
-- 跟 Claude Code / Gemini CLI 共享同一份 spirit vault — **沒有 split-brain**
+- 跟 Claude Code / Antigravity CLI 共享同一份 spirit vault — **沒有 split-brain**
 
 ### 反思引擎(Annuli)
 
@@ -305,7 +305,7 @@ graph TB
 
   subgraph CLIs["CLI Interfaces"]
     CC[Claude Code]
-    GC[Gemini / Codex / Hermes]
+    GC[Antigravity / Codex / Hermes]
   end
 
   MD -->|HTTP API| AN
